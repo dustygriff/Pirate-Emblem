@@ -15,6 +15,10 @@ namespace Engine
 	/// </summary>
 	public class Unit
 	{
+		
+		#region General Stats
+		public UInt16 Health_;
+		#endregion
 		public Unit()
 		{
 		}
