@@ -1,6 +1,8 @@
 # Pirate-Emblem
 Ya'll Ready for this?
 
+Text files can be edited online and committed directly to the branch or master, saves you from some of the bullshit below haha
+
 -------------Setup----------------
 
 -Install SharpDevelop 
