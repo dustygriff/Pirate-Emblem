@@ -36,3 +36,5 @@ Ya'll Ready for this?
 -In the Github desktop client open up the newly created branch, in the top right hand corner a publish button should be present, select it and it will push the branch and changes to the online copy
 
 -Refresh the github online repository in your browser 
+
+-The new branch is now live so select it and click the button 'Compare and pull request', it take you to the pull request page.
