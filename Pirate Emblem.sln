@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 5.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pirate Emblem", "Pirate Emblem\Pirate Emblem.csproj", "{444F19FD-28AE-454A-920D-FF18E9571104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{2A1D3924-45C7-4E00-824E-5DB741C19BF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{444F19FD-28AE-454A-920D-FF18E9571104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{444F19FD-28AE-454A-920D-FF18E9571104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{444F19FD-28AE-454A-920D-FF18E9571104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{444F19FD-28AE-454A-920D-FF18E9571104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A1D3924-45C7-4E00-824E-5DB741C19BF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A1D3924-45C7-4E00-824E-5DB741C19BF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A1D3924-45C7-4E00-824E-5DB741C19BF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A1D3924-45C7-4E00-824E-5DB741C19BF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
