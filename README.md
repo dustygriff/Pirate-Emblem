@@ -38,3 +38,7 @@ Ya'll Ready for this?
 -Refresh the github online repository in your browser 
 
 -The new branch is now live so select it and click the button 'Compare and pull request', it take you to the pull request page.
+
+-Review the change thouroughly and when satisfied commit the pull request. This will send the change to a governing body of this repository who will decide whether or not to merge with the master.
+
+-Complicated AF
