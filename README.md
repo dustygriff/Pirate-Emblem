@@ -41,4 +41,8 @@ Ya'll Ready for this?
 
 -Review the change thouroughly and when satisfied commit the pull request. This will send the change to a governing body of this repository who will decide whether or not to merge with the master.
 
+-Go back to the Desktop Client and choose the recently submitted branch. Click the Gear button and select Delete BranchName.
+
+-Select 'Yes, delete both', this deletes branch locally and on the online copy. The desktop has some lag issues with the online copy so i find it easier to just use the client for pushing updates and deleting branches.
+
 -Complicated AF
