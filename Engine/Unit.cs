@@ -37,7 +37,7 @@ namespace Engine
 		#endregion
 		
 		
-		
+		//Test comment
 		public Unit(
 			UInt16 con,
 			UInt16 def,
@@ -49,7 +49,7 @@ namespace Engine
 			UInt16 skl,
 			UInt16 str)
 		{
-			Constitution_ = con;
+			Constitution_ = con; 
 			Defense_ = def;
 			Health_ = hp;
 			Level_ = lvl;
