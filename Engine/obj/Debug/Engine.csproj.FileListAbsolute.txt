@@ -3,3 +3,8 @@ C:\Users\Jason\Developement\Pirate Emblem\Pirate Emblem\Engine\bin\Debug\Engine.
 C:\Users\Jason\Developement\Pirate Emblem\Pirate Emblem\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
 C:\Users\Jason\Developement\Pirate Emblem\Pirate Emblem\Engine\obj\Debug\Engine.dll
 C:\Users\Jason\Developement\Pirate Emblem\Pirate Emblem\Engine\obj\Debug\Engine.pdb
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Engine\bin\Debug\Engine.dll
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Engine\bin\Debug\Engine.pdb
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Engine\obj\Debug\Engine.csprojResolveAssemblyReference.cache
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Engine\obj\Debug\Engine.dll
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Engine\obj\Debug\Engine.pdb

@@ -7,6 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.Drawing;
 
 namespace Engine
 {
@@ -15,6 +16,7 @@ namespace Engine
 	/// </summary>
 	public class Unit
 	{
+        public Sprite Sprite_;
 		
 		#region General Stats
 		public UInt16 Constitution_;
@@ -47,7 +49,8 @@ namespace Engine
 			UInt16 mov,
 			UInt16 spd,
 			UInt16 skl,
-			UInt16 str)
+			UInt16 str, 
+            String filepath)
 		{
 			Constitution_ = con; 
 			Defense_ = def;
@@ -58,7 +61,14 @@ namespace Engine
 			Speed_ = spd;
 			Skill_ = skl;
 			Strength_ = str;
+
+            Sprite_ = new Sprite(filepath);
 		}
+
+        public void Draw(int x, int y, int w, int l, Graphics g)
+        {
+            Sprite_.Draw(x, y, w, l, g);
+        }
 		
 		#region Setters
 		public void SetConstitution(UInt16 con)

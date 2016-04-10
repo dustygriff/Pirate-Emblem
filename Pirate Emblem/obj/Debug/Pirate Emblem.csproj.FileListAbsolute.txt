@@ -11,3 +11,10 @@ C:\Users\Jason\Developement\Pirate Emblem\Pirate Emblem\Pirate Emblem\obj\Debug\
 C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\bin\Debug\Pirate Emblem.exe.config
 C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\obj\Debug\Pirate Emblem.exe
 C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\obj\Debug\Pirate Emblem.pdb
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\bin\Debug\Pirate Emblem.exe
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\bin\Debug\Pirate Emblem.pdb
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\bin\Debug\Engine.dll
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\bin\Debug\Engine.pdb
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\obj\Debug\Pirate Emblem.csprojResolveAssemblyReference.cache
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\obj\Debug\Pirate_Emblem.MainForm.resources
+C:\Users\Jason\Source\Repos\Pirate-Emblem\Pirate Emblem\obj\Debug\Pirate Emblem.csproj.GenerateResource.Cache

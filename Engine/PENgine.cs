@@ -8,6 +8,7 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace Engine
 {
@@ -16,6 +17,16 @@ namespace Engine
 	/// </summary>
 	public class PEngine
 	{
-		
+        Unit unit;
+
+		public PEngine()
+        {
+            unit = new Unit(1, 1, 1, 1, 1, 1, 1, 1, 1, "Images/test.png");
+        }
+
+        public void Draw(Graphics dc)
+        {
+            unit.Draw(20, 20, 32, 32, dc);
+        }
 	}
 }
