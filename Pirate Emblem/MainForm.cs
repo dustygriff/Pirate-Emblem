@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Engine;
+using System.Timers;
 
 namespace Pirate_Emblem
 {
@@ -19,29 +20,70 @@ namespace Pirate_Emblem
 	/// </summary>
 	public partial class MainForm : Form
 	{
+        #region Local Variables
         PEngine GameEngine_;
 
-		public MainForm()
+        static System.Timers.Timer Timer_;
+        static System.Timers.Timer DrawTimer_;
+        private int Count_;
+
+        BufferedGraphicsContext CurrentContext_;
+        BufferedGraphics Buffer_;
+        #endregion
+
+        public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
+
 			InitializeComponent();
 
+            #region Window Settings
+            this.WindowState = FormWindowState.Normal;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Bounds = Screen.PrimaryScreen.Bounds;
+
             this.BackColor = Color.Aquamarine;
+            #endregion
 
             GameEngine_ = new PEngine();
 
-			//
-			// TODO: Add constructor code after the InitializeComponent() call.
-			//
-		}
+            Start();
 
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            GameEngine_.Draw(e.Graphics);
+            // Gets a reference to the current BufferedGraphicsContext
+            CurrentContext_ = BufferedGraphicsManager.Current;
+            // Creates a BufferedGraphics instance associated with Form1, and with 
+            // dimensions the same size as the drawing surface of Form1.
+            Buffer_ = CurrentContext_.Allocate(this.CreateGraphics(),
+               this.DisplayRectangle);
 
-            base.OnPaint(e);
+
         }
+
+        public void Start()
+        {
+            Count_ = 0;
+
+            Timer_ = new System.Timers.Timer(350);
+            DrawTimer_ = new System.Timers.Timer(33.3);
+
+            Timer_.Elapsed += new ElapsedEventHandler(Timer_Elapsed);
+            Timer_.Enabled = true; // Enable it
+
+            DrawTimer_.Elapsed += new ElapsedEventHandler(Draw_Timer);
+            DrawTimer_.Enabled = true;
+
+        }
+
+        public void Timer_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            Count_++;
+        }
+
+        public void Draw_Timer(object sender, ElapsedEventArgs e)
+        {
+            GameEngine_.Draw(Buffer_, Count_);
+
+            Buffer_.Render();
+        }
+
     }
 }

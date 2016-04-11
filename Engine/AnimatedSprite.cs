@@ -7,24 +7,23 @@ using System.Drawing;
 namespace Engine
 {
     /// <summary>
-	/// Mostly background and static sprites. 
+	/// Animated sprites used for characters and misc.
 	/// </summary>
-    public class Sprite
+    public class AnimatedSprite
     {
-        public Image Image_;    
+        public Image Image_;
 
-        public Sprite(String filepath)
+        public AnimatedSprite(String filepath)
         {
             Image_ = Image.FromFile(filepath);
         }
 
-        public void Draw(int x, int y, int w, int l, int off, BufferedGraphics buff)
+        public void Draw(int x, int y, int w, int l, BufferedGraphics buff, int count)
         {
-            RectangleF r = new RectangleF(off, 0, w, l);
+            RectangleF r = new RectangleF((count % 2) * 32, 0, w, l);
             GraphicsUnit units = GraphicsUnit.Pixel;
 
             buff.Graphics.DrawImage(Image_, 20, 20, r, units);
-
         }
     }
 }

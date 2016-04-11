@@ -16,7 +16,7 @@ namespace Engine
 	/// </summary>
 	public class Unit
 	{
-        public Sprite Sprite_;
+        public AnimatedSprite Sprite_;
 		
 		#region General Stats
 		public UInt16 Constitution_;
@@ -62,12 +62,12 @@ namespace Engine
 			Skill_ = skl;
 			Strength_ = str;
 
-            Sprite_ = new Sprite(filepath);
+            Sprite_ = new AnimatedSprite(filepath);
 		}
 
-        public void Draw(int x, int y, int w, int l, Graphics g)
+        public void Draw(int x, int y, int w, int l, BufferedGraphics buff, int count)
         {
-            Sprite_.Draw(x, y, w, l, g);
+            Sprite_.Draw(x, y, w, l, buff, count);
         }
 		
 		#region Setters
