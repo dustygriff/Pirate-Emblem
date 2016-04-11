@@ -13,7 +13,7 @@ using System.Drawing;
 namespace Engine
 {
 	/// <summary>
-	/// Description of MyClass.
+	/// Game Engine
 	/// </summary>
 	public class PEngine
 	{
@@ -21,12 +21,12 @@ namespace Engine
 
 		public PEngine()
         {
-            unit = new Unit(1, 1, 1, 1, 1, 1, 1, 1, 1, "Images/test.png");
+            unit = new Unit(1, 1, 1, 1, 1, 1, 1, 1, 1, "Images/test2.png");
         }
 
-        public void Draw(Graphics dc)
+        public void Draw(BufferedGraphics buff, int count)
         {
-            unit.Draw(20, 20, 32, 32, dc);
+            unit.Draw(20, 20, 32, 32, buff, count);
         }
 	}
 }
